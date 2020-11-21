@@ -11,4 +11,12 @@ public class A {
     public String callB(){
         return b.say();
     }
+
+    public String callSelf(){
+        return self();
+    }
+
+    String self() {
+        return "self";
+    }
 }

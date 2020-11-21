@@ -1,13 +1,17 @@
 package it.second;
 
 
+import it.App;
 import it.BaseIT;
+import it.SuiteConfig;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 
 
+@SpringBootTest(classes = {SuiteConfig.class, App.class})
 public class SuiteTest extends BaseIT {
     @Autowired
     ATest aTest;

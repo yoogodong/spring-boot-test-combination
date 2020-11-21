@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @TestConfiguration
 @ComponentScan(basePackages = "it")
-public class ITConfig {
+public class SuiteConfig {
 
     @Bean
     public String someBean(){
